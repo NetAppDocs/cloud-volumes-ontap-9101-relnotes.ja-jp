@@ -20,6 +20,14 @@ Cloud Volumes ONTAP 9.10.1 には、いくつかの新機能と機能拡張が�
 
 
 
+== 9.10.1 P3（2022年5月15日）
+
+バージョン3.9.13以降を実行しているコネクタがある場合、Microsoft Azureで9.10.1 P3パッチがCloud Volumes ONTAP で使用できるようになりました。既存のシステムのこのパッチリリースへのアップグレードを求めるプロンプトが Cloud Manager に表示されます。
+
+https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.10.1P3["P3 パッチで修正されたバグのリストを表示します"^] （ネットアップサポートサイトへのログインが必要です）。
+
+
+
 == ライセンスに関する更新情報（ 2022 年 2 月 9 日）
 
 市場における Cloud Volumes ONTAP の変更点を次に示します。
