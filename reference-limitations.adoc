@@ -20,7 +20,7 @@ summary: 既知の制限事項は、このリリースの製品でサポート�
 
 
 
-== から Cloud Volumes ONTAP 環境を変更することはできません クラウドプロバイダのコンソール
+== クラウドプロバイダのコンソールからCloud Volumes ONTAP の導入を変更しないでください
 
 クラウドプロバイダのコンソールから Cloud Volumes ONTAP システムの構成を変更すると、サポートされない構成になります。Cloud Manager で作成および管理する Cloud Volumes ONTAP リソースに対する変更は、システムの安定性および Cloud Manager によるシステムの管理機能に影響を及ぼす可能性があります。
 

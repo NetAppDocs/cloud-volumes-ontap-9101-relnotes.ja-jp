@@ -222,7 +222,6 @@
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">既知の制限事項は、このリリースの製品でサポートされていないプラットフォーム、デバイス、機能、または製品と正しく相互運用できない機能を特定します。これらの制限事項を慎重に確認してください</block>
   <block id="fc5c1a5c8028c4da4d0b0de1a9b1df3d" category="doc">すべてのクラウドプロバイダで制約があります</block>
   <block id="a20ea8590a5bc20c473682a1138198a0" category="paragraph">すべてのクラウドプロバイダの Cloud Volumes ONTAP に、 AWS 、 Azure 、 Google Cloud の制限が適用されます。</block>
-  <block id="cbc4bd981852b46f0fbf6e6a6d4ed5af" category="section-title">から Cloud Volumes ONTAP 環境を変更することはできません クラウドプロバイダのコンソール</block>
   <block id="9baac3e3e045ecc1a8ffecb16253a5d1" category="paragraph">クラウドプロバイダのコンソールから Cloud Volumes ONTAP システムの構成を変更すると、サポートされない構成になります。Cloud Manager で作成および管理する Cloud Volumes ONTAP リソースに対する変更は、システムの安定性および Cloud Manager によるシステムの管理機能に影響を及ぼす可能性があります。</block>
   <block id="871cdf07a10d1cc27cb3166e7a820a66" category="section-title">ディスクとアグリゲートは Cloud Manager で管理する必要があります</block>
   <block id="dbdb55d3acfbb139cd66db544b19d738" category="paragraph">すべてのディスクとアグリゲートは、 Cloud Manager から直接作成および削除する必要があります。これらのアクションは、別の管理ツールから実行しないでください。これにより、システムの安定性が低下し、将来ディスクを追加できなくなる可能性があります。また、クラウドプロバイダの冗長料金が発生する可能性もあります。</block>
@@ -531,9 +530,6 @@
   <block id="0066e8873a17823db601b98ebbc37dd2" category="section-title">HA の制限事項</block>
   <block id="b1969fa9ebe4dd2003618adb77082978" category="paragraph">一部のリージョンでは HA ペアがサポートされません。</block>
   <block id="d91c9372e1fdf74d651217f1a36e518b" category="inline-link">サポートされている Azure リージョンのリストを表示します</block>
-  <block id="1e6996b39daf779b565c50c8411fbc8d" category="paragraph"><block ref="8e36f0f32d75ebd3c7851e726c538544" category="inline-link-rx"></block>。</block>
-  <block id="e4f5b6f59db7bfa0e08c02262ddbd654" category="section-title">従量課金制は、 CSP パートナーが利用できません</block>
-  <block id="f2ff5834d93c258f0fc4ad6cf6a17942" category="paragraph">マイクロソフトクラウドソリューションプロバイダー (CSP) パートナーの場合、従量課金制のサブスクリプションは CSP パートナーに提供されないため、 Cloud Volumes ONTAP Explore 、 Standard 、または Premium を展開することはできません。ライセンスを購入し、 Cloud Volumes ONTAP BYOL を導入する必要があります。</block>
   <block id="9141535b8d150812f3cded29f090ad8c" category="summary">Google Cloud では、いくつかの Cloud Volumes ONTAP 構成がサポートされています。</block>
   <block id="9e931b1cee40a7346d1f06dd6a75ba8e" category="doc">Google Cloud でサポートされている構成</block>
   <block id="0c11951245f2ef7895ea0fc514386d6e" category="paragraph">Cloud Volumes ONTAP は、フォールトトレランスとノンストップオペレーションを実現するために、 Google Cloud Platform ではシングルノードシステムとして、ハイアベイラビリティ（ HA ）ペアのノードとして利用できます。</block>
@@ -679,4 +675,10 @@
   <block id="f072eddf76dc8c19f3d32a7263fe7931" category="paragraph"><block ref="37cca4b92d12a1904a84ee04c60f6ada" category="inline-link-macro-rx"></block>。</block>
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link-macro">ネットアップサポート</block>
   <block id="0b55c70d5652d8fe1f5ddc75633eaa95" category="paragraph">を参照してください <block ref="0bcfd67fb2b966e3378fbf640ee81a22" category="inline-link-macro-rx"></block> これらのインスタンスタイプの可用性とサポート終了の詳細については、を参照してください。</block>
+  <block id="2819feead2b07762a4465189ab8b2f52" category="paragraph-title">HA ペアの場合、ライセンスで許可されるノードあたりの容量制限はか、それとも HA ペア全体の容量制限ですか。</block>
+  <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">HA ペアの場合、ミラーリングされたデータはライセンスで許可されている容量の上限にカウントされますか。</block>
+  <block id="04e02f6b2c0d8cc75f029fa0d4d1378f" category="section-title">クラウドプロバイダのコンソールからCloud Volumes ONTAP の導入を変更しないでください</block>
+  <block id="2f9882645b2c32820ad085240bacb763" category="paragraph-title">HA の場合、ライセンスの容量制限はノード単位か、 HA ペア全体に適用されるか</block>
+  <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">AWS の HA システムでは、ミラーリングされたデータは容量制限にカウントされますか。</block>
+  <block id="8e36f0f32d75ebd3c7851e726c538544" category="paragraph"><block ref="8e36f0f32d75ebd3c7851e726c538544" category="inline-link-rx"></block></block>
 </blocks>
