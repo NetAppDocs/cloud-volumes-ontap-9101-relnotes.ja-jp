@@ -16,7 +16,7 @@ summary: Cloud Volumes ONTAP 9.10.1 には、いくつかの新機能と機能�
 [role="lead"]
 Cloud Volumes ONTAP 9.10.1 には、いくつかの新機能と機能拡張が含まれています。
 
-その他の機能と機能拡張は、 Cloud Manager の最新バージョンで導入されました。を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager リリースノート"^] を参照してください。
+その他の機能と拡張機能も、最新バージョンのBlueXPで導入されました。を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["BlueXPリリースノート"^] を参照してください。
 
 
 
@@ -40,7 +40,7 @@ https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downl
 
 == 9.10.1 P3（2022年5月15日）
 
-バージョン3.9.13以降を実行しているコネクタがある場合、Microsoft Azureで9.10.1 P3パッチがCloud Volumes ONTAP で使用できるようになりました。既存のシステムのこのパッチリリースへのアップグレードを求めるプロンプトが Cloud Manager に表示されます。
+バージョン3.9.13以降を実行しているコネクタがある場合、Microsoft Azureで9.10.1 P3パッチがCloud Volumes ONTAP で使用できるようになりました。BlueXPでは、既存のシステムをこのパッチリリースにアップグレードするように求められます。
 
 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.10.1P3["P3 パッチで修正されたバグのリストを表示します"^] （ネットアップサポートサイトへのログインが必要です）。
 
@@ -58,7 +58,7 @@ https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downl
 クラウドマーケットプレイスで既存のサブスクリプションがある場合は、それらの新しいサービスにも自動的にサブスクライブされます。新しい Cloud Volumes ONTAP 作業環境の導入時に、容量単位の課金を選択できます。
 
 +
-新規のお客様の場合、 Cloud Manager は新しい作業環境の作成時に登録を求めるプロンプトを表示します。
+新規のお客様の場合は、新しい作業環境を作成するときに登録を求めるメッセージが表示されます。
 
 * AWS と Google Cloud Marketplace を使用したノード単位のライセンスは廃止され、新しいユーザには提供されなくなりました。これには、年間契約と時間単位のサブスクリプション（ Explore 、 Standard 、 Premium ）が含まれます。
 +
@@ -74,13 +74,13 @@ link:concept-licensing.html["Cloud Volumes ONTAP のライセンスオプショ�
 
 Cloud Volumes ONTAP 9.10.1 の General Availability （ GA ）リリースがリリースされました。GA リリースにはバグの修正が含まれています。
 
-Cloud Manager から、 9.10.1 RC1 、 9.10.0 、または 9.9.1.1 を実行している既存のシステムのアップグレードを求められます。
+BlueXPでは、9.10.1 RC1、9.10.0、または9.0.1のいずれかのバージョンを実行している既存のシステムをアップグレードするように求められます。
 
 
 
 == その他の VM タイプ（ 2021 年 1 月 2 日）のサポート
 
-Cloud Volumes ONTAP は、 Cloud Manager 3.9.14 リリースの一部として、 9.10.1 リリース以降、 Microsoft Azure の次の VM タイプでサポートされるようになりました。
+BlueXP 3.9.14リリースの一部として、Cloud Volumes ONTAP は9.10.1リリース以降のMicrosoft Azureで次のVMタイプでサポートされるようになりました。
 
 * E4ds_v4
 * E8ds_v4
@@ -112,7 +112,7 @@ az account set -s AZURE_SUBSCRIPTION_NAME_OR_ID
 az feature register --name EnableHighAvailabilityMode --namespace Microsoft.Network
 az provider register -n Microsoft.Network
 ----
-Cloud Volumes ONTAP 9.10.1 システムでは、 Cloud Manager からこれらの詳細が「 Action Required 」メッセージに表示され、 Azure サブスクリプションでこの機能を有効にする必要があります。
+Cloud Volumes ONTAP 9.10.1システムでは、Azureサブスクリプションでこの機能を有効にする必要がある場合、これらの詳細を「Action Required」メッセージで表示するように求められます。
 
 次の点に注意してください。
 
@@ -131,9 +131,9 @@ ONTAP イメージ作成のセキュリティを強化し、 Cloud Volumes ONTAP
 
 === Keystone Flex Subscriptions をサポート
 
-Cloud Manager 3.9.13 リリースでは、 Cloud Volumes ONTAP HA ペアで Keystone Flex サブスクリプションを使用できるようになりました。Keystone Flex サブスクリプションは、成長に合わせて購入できるサブスクリプションベースのサービスです。 OPEX 消費モデルを希望するお客様に、設備投資やリースを先に行うお客様にシームレスなハイブリッドクラウドエクスペリエンスを提供します。
+コネクタ3.9.13リリースの一部として、Cloud Volumes ONTAP HAペアでKeystone Flexサブスクリプションを使用できるようになりました。Keystone Flex サブスクリプションは、成長に合わせて購入できるサブスクリプションベースのサービスです。 OPEX 消費モデルを希望するお客様に、設備投資やリースを先に行うお客様にシームレスなハイブリッドクラウドエクスペリエンスを提供します。
 
-Keystone Flex サブスクリプションは、 Cloud Manager から導入可能なすべての新しいバージョンの Cloud Volumes ONTAP でサポートされます。
+Keystone Flexサブスクリプションは、BlueXPから導入できるすべての新しいバージョンのCloud Volumes ONTAP でサポートされています。
 
 
 
@@ -145,9 +145,9 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-security
 
 
 
-== 必要な Cloud Manager Connector のバージョン
+== 必要なBlueXPコネクタのバージョン
 
-新しい Cloud Volumes ONTAP 9.10.1 システムを導入し、既存のシステムを 9.10.1 にアップグレードするには、 Cloud Manager Connector でバージョン 3.9.13 以降が実行されている必要があります。
+新しいCloud Volumes ONTAP 9.10.1システムを導入し、既存のシステムを9.10.1にアップグレードするには、BlueXP Connectorがバージョン3.9.13以降を実行している必要があります。
 
 
 TIP: コネクタの自動アップグレードはデフォルトで有効になっているため、最新バージョンを実行する必要があります。
@@ -156,10 +156,10 @@ TIP: コネクタの自動アップグレードはデフォルトで有効にな
 
 == アップグレードに関する注意事項
 
-* Cloud Volumes ONTAP のアップグレードが Cloud Manager から完了している必要があります。System Manager または CLI を使用して Cloud Volumes ONTAP をアップグレードしないでください。これを行うと、システムの安定性に影響を与える可能性
-* 9.10.0 リリースから Cloud Volumes ONTAP 9.10.1 にアップグレードしたり、 9.9.1 リリースからアップグレードしたりできます。対象となる Cloud Volumes ONTAP システムを 9.10.1 リリースにアップグレードするよう求めるプロンプトが Cloud Manager に表示されます。
+* Cloud Volumes ONTAP のアップグレードは、BlueXPから完了している必要があります。System Manager または CLI を使用して Cloud Volumes ONTAP をアップグレードしないでください。これを行うと、システムの安定性に影響を与える可能性
+* 9.10.0 リリースから Cloud Volumes ONTAP 9.10.1 にアップグレードしたり、 9.9.1 リリースからアップグレードしたりできます。BlueXPでは、対象となるCloud Volumes ONTAP システムを9.10.1リリースにアップグレードするように求められます。
 +
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Cloud Manager から通知された場合のアップグレード方法について説明します"^]。
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["BlueXPから通知があった場合のアップグレード方法について説明します"^]。
 
 * シングルノードシステムのアップグレードでは、 I/O が中断されるまで最大 25 分間システムがオフラインになります。
 * HA ペアのアップグレードは無停止で、 I/O が中断されません。無停止アップグレードでは、各ノードが連携してアップグレードされ、クライアントへの I/O の提供が継続されます。
