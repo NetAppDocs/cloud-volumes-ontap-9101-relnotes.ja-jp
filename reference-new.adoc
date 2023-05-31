@@ -16,7 +16,7 @@ summary: Cloud Volumes ONTAP 9.10.1 には、いくつかの新機能と機能�
 [role="lead"]
 Cloud Volumes ONTAP 9.10.1 には、いくつかの新機能と機能拡張が含まれています。
 
-その他の機能と拡張機能も、最新バージョンのBlueXPで導入されました。を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["BlueXPリリースノート"^] を参照してください。
+その他の機能と拡張機能も、最新バージョンのBlueXPで導入されました。を参照してください https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXPリリースノート"^] を参照してください。
 
 
 
@@ -24,7 +24,7 @@ Cloud Volumes ONTAP 9.10.1 には、いくつかの新機能と機能拡張が�
 
 AWSでは、C4、M4、およびR4 EC2インスタンスタイプはCloud Volumes ONTAP でサポートされなくなりました。C4、M4、またはR4インスタンスタイプで実行されている既存のシステムがある場合は、C5、m5、またはr5インスタンスファミリーでインスタンスタイプに変更する必要があります。
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html["Cloud Volumes ONTAP のEC2インスタンスタイプを変更する方法について説明します"^]。
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["Cloud Volumes ONTAP のEC2インスタンスタイプを変更する方法について説明します"^]。
 
 を参照してください link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["ネットアップサポート"^] これらのインスタンスタイプの可用性とサポート終了の詳細については、を参照してください。
 
@@ -141,7 +141,7 @@ Keystone Flexサブスクリプションは、BlueXPから導入できるすべ�
 
 ONTAP 9.10.1 リリースには、 Azure Key Vault （ AKV ）または Google Cloud Key Management Service を使用した ONTAP 暗号化キーの保護を可能にする機能拡張が含まれています。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-security.html["Cloud Volumes ONTAP の暗号化のサポートについては、こちらをご覧ください"^]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-security.html["Cloud Volumes ONTAP の暗号化のサポートについては、こちらをご覧ください"^]。
 
 
 
@@ -159,7 +159,7 @@ TIP: コネクタの自動アップグレードはデフォルトで有効にな
 * Cloud Volumes ONTAP のアップグレードは、BlueXPから完了している必要があります。System Manager または CLI を使用して Cloud Volumes ONTAP をアップグレードしないでください。これを行うと、システムの安定性に影響を与える可能性
 * 9.10.0 リリースから Cloud Volumes ONTAP 9.10.1 にアップグレードしたり、 9.9.1 リリースからアップグレードしたりできます。BlueXPでは、対象となるCloud Volumes ONTAP システムを9.10.1リリースにアップグレードするように求められます。
 +
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["BlueXPから通知があった場合のアップグレード方法について説明します"^]。
+http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html["BlueXPから通知があった場合のアップグレード方法について説明します"^]。
 
 * シングルノードシステムのアップグレードでは、 I/O が中断されるまで最大 25 分間システムがオフラインになります。
 * HA ペアのアップグレードは無停止で、 I/O が中断されません。無停止アップグレードでは、各ノードが連携してアップグレードされ、クライアントへの I/O の提供が継続されます。
